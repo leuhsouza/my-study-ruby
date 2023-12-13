@@ -24,8 +24,8 @@ def linear_search (searched_array, searched_value)
   end
 
   if found
-    puts "valor encontrado está na posição #{position}"
+    return position
   else
-    puts "valor não encontrado"
+    return nil
   end
 end
