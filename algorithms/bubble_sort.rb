@@ -1,6 +1,6 @@
 def bubble_sort (arr)
   n = arr.length
-  # Teste para ver se esta funcionando
+  # # Teste para ver se esta funcionando
   # puts n
 
   (0..n - 1).each do |i|
@@ -10,11 +10,11 @@ def bubble_sort (arr)
       end
     end
   end
-  # arr
+  arr
 end
 
-# testando codigo
-# array = [1,5,3,25]
+# # testando codigo
+# array = [64, 34, 25, 12, 22, 11, 90]
 # bubble_sort(array)
 # puts "Array ordenado: #{array}"
 
