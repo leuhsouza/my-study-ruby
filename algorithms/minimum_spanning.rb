@@ -1,9 +1,9 @@
 class Graph
-    attr_acesssor :vertices, :edges
+    attr_accessor :vertices, :edges
 
     def initialize
-        @vertices []
-        @edge []
+        @vertices = []
+        @edges = []
     end
 
     def add_vertex(vertex)
@@ -16,7 +16,7 @@ class Graph
 
     def kruskal_mst
         result = []
-        sorted.edges = @edges.sort_by {[edge | edge[2]]}
+        sorted_edges = @edges.sort_by {|edge | edge[2]}
         union_find = {}
         @vertices.each{|vertex| union_find[vertex]=vertex}
 
@@ -26,7 +26,7 @@ class Graph
             
             if root1 != root2
                 result << edge
-                union(union.find, root1, root2)
+                union(union_find, root1, root2)
             end
         end
         
