@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative
+require_relative '../../algorithms/linear_search'
 
 describe 'linear_search' do
   describe  '#linear_search' do it 'deve retornar o valor procurado' do
