@@ -1,6 +1,5 @@
 require 'spec_helper'
 require_relative '../../algorithms/linear_search'
-
 describe 'linear_search' do
   describe  '#linear_search' do it 'deve retornar o valor procurado' do
     position = linear_search([1,4,5,6,3],5)
